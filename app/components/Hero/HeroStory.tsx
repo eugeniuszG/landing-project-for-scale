@@ -36,7 +36,7 @@ export default function HeroStory({
             >
               <Image
                 src={teamImage}
-                alt="Our Team"
+                alt="Nasz zespół"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -93,7 +93,7 @@ export default function HeroStory({
               className="text-2xl md:text-3xl font-bold text-center mb-12"
               style={{ color: 'var(--color-text-primary)' }}
             >
-              How We Work
+              Jak pracujemy
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">

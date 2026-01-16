@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import TelegramButton from "./components/TelegramButton";
+import ContactButtons from "./components/TelegramButton";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from '@vercel/analytics/next';
 import { verificationMeta } from "./lib/verification";
@@ -159,7 +159,7 @@ export default function RootLayout({
               <Analytics />
             </main>
             <Footer />
-            <TelegramButton />
+            <ContactButtons />
           </div>
         </ThemeProvider>
       </body>

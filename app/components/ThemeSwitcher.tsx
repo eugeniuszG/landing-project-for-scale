@@ -15,7 +15,7 @@ export default function ThemeSwitcher({ showLabels = true, className = '' }: The
     <div className={`theme-switcher ${className}`}>
       {showLabels && (
         <p className="text-sm font-medium mb-3" style={{ color: 'var(--color-text-secondary)' }}>
-          Select Theme:
+          Wybierz motyw:
         </p>
       )}
       <div className="flex flex-wrap gap-2">

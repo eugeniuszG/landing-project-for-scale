@@ -136,7 +136,7 @@ export default function Testimonials() {
             onClick={prevTestimonial}
             className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 rounded-full p-2 shadow-md transition-all duration-200"
             style={{ backgroundColor: 'var(--color-bg-secondary)' }}
-            aria-label="Previous testimonial"
+            aria-label="Poprzednia opinia"
           >
             <svg 
               className="w-6 h-6" 
@@ -153,7 +153,7 @@ export default function Testimonials() {
             onClick={nextTestimonial}
             className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 rounded-full p-2 shadow-md transition-all duration-200"
             style={{ backgroundColor: 'var(--color-bg-secondary)' }}
-            aria-label="Next testimonial"
+            aria-label="Następna opinia"
           >
             <svg 
               className="w-6 h-6" 

@@ -60,8 +60,8 @@ export const themes: Record<ThemeId, ThemeConfig> = {
   // Template A — "Minimal / Scandinavian"
   'minimal': {
     id: 'minimal',
-    name: 'Minimal Scandinavian',
-    description: 'Clean, calm design with lots of whitespace. Perfect for mainstream clients.',
+    name: 'Minimalistyczny',
+    description: 'Czysty, spokojny design z dużą ilością białej przestrzeni. Idealny dla większości klientów.',
     heroVariant: 'split',
     colors: {
       bgPrimary: '#ffffff',
@@ -107,8 +107,8 @@ export const themes: Record<ThemeId, ThemeConfig> = {
   // Template B — "Premium Dark / Marble"
   'premium-dark': {
     id: 'premium-dark',
-    name: 'Premium Dark',
-    description: 'Dark, luxurious design with glass effects. For premium-budget clients.',
+    name: 'Premium Ciemny',
+    description: 'Ciemny, luksusowy design z efektami szkła. Dla klientów z wyższym budżetem.',
     heroVariant: 'fullwidth',
     colors: {
       bgPrimary: '#0a0a0a',
@@ -154,8 +154,8 @@ export const themes: Record<ThemeId, ThemeConfig> = {
   // Template C — "Bold Conversion / High-contrast"
   'bold-conversion': {
     id: 'bold-conversion',
-    name: 'Bold Conversion',
-    description: 'High-contrast design focused on lead generation. Form-first approach.',
+    name: 'Wysoka Konwersja',
+    description: 'Wysokokontrastowy design skupiony na generowaniu leadów. Formularz na pierwszym planie.',
     heroVariant: 'form-focused',
     colors: {
       bgPrimary: '#ffffff',
@@ -201,8 +201,8 @@ export const themes: Record<ThemeId, ThemeConfig> = {
   // Template D — "Warm / Organic"
   'warm-organic': {
     id: 'warm-organic',
-    name: 'Warm Organic',
-    description: 'Cozy, friendly design with warm tones. Great for family-oriented services.',
+    name: 'Ciepły Organiczny',
+    description: 'Przytulny, przyjazny design z ciepłymi tonami. Świetny dla usług rodzinnych.',
     heroVariant: 'story',
     colors: {
       bgPrimary: '#faf8f5',
@@ -248,8 +248,8 @@ export const themes: Record<ThemeId, ThemeConfig> = {
   // Template E — "Editorial / Gallery-first"
   'editorial': {
     id: 'editorial',
-    name: 'Editorial Gallery',
-    description: 'Magazine-style design with large photos. Perfect when portfolio sells.',
+    name: 'Galeria Redakcyjna',
+    description: 'Design w stylu magazynu z dużymi zdjęciami. Idealny gdy portfolio sprzedaje.',
     heroVariant: 'gallery',
     colors: {
       bgPrimary: '#ffffff',

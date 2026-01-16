@@ -82,6 +82,7 @@ export const siteConfig: SiteConfig = {
   social: {
     facebook: "https://facebook.com/yourbusiness",
     instagram: "https://instagram.com/yourbusiness",
+    telegram: "https://t.me/your_username",
   },
   
   siteUrl: "https://yourdomain.com",

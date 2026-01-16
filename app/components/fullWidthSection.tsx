@@ -19,7 +19,7 @@ export const FullWidthSectionMain = forwardRef<HTMLElement, FullWidthSectionMain
     <div className="absolute inset-0 z-0">
       <Image
         src={backgroundImage}
-        alt="Background image"
+        alt="Obraz tła"
         fill
         style={{ objectFit: 'cover', opacity: 0.4, objectPosition: 'center' }}
         quality={70}

@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme CSS Variables - Default values (overridden by ThemeContext) */
+:root {
+  /* Colors - Backgrounds */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8f9fa;
+  --color-bg-accent: #f1f3f4;
+  --color-bg-card: #ffffff;
+  --color-bg-overlay: rgba(0, 0, 0, 0.4);
+  
+  /* Colors - Text */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #4a4a4a;
+  --color-text-muted: #8a8a8a;
+  --color-text-on-accent: #ffffff;
+  
+  /* Colors - Accent */
+  --color-accent: #2d3436;
+  --color-accent-hover: #636e72;
+  --color-accent-light: #dfe6e9;
+  
+  /* Colors - Border */
+  --color-border: #e0e0e0;
+  --color-border-light: #f0f0f0;
+  
+  /* Colors - Status */
+  --color-success: #00b894;
+  --color-error: #d63031;
+  --color-warning: #fdcb6e;
+  
+  /* Typography */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+  
+  /* Spacing */
+  --radius: 4px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+  
+  /* Effects */
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+html,
+body {
+  background: var(--color-bg-primary);
+}
+
+body {
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-body);
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-primary);
+}
+
+/* Utility classes for theme colors */
+.bg-theme-primary { background-color: var(--color-bg-primary); }
+.bg-theme-secondary { background-color: var(--color-bg-secondary); }
+.bg-theme-accent { background-color: var(--color-bg-accent); }
+.bg-theme-card { background-color: var(--color-bg-card); }
+
+.text-theme-primary { color: var(--color-text-primary); }
+.text-theme-secondary { color: var(--color-text-secondary); }
+.text-theme-muted { color: var(--color-text-muted); }
+.text-theme-accent { color: var(--color-accent); }
+
+.border-theme { border-color: var(--color-border); }
+.border-theme-light { border-color: var(--color-border-light); }
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--color-text-on-accent);
+  border-radius: var(--radius);
+  transition: background-color 0.2s ease;
+}
+.btn-accent:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.card-theme {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+/* Theme-specific overrides */
+.theme-premium-dark {
+  --color-bg-primary: #0a0a0a;
+}
+
+.theme-premium-dark .card-theme {
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

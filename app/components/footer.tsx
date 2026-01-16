@@ -28,7 +28,7 @@ const Footer = () => {
 
           {/* Quick Links Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-theme-primary">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-theme-primary">Szybkie linki</h3>
             <ul className="space-y-2">
               {siteConfig.footerLinks.map((link) => (
                 <li key={link.href}>
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Contact Information Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-theme-primary">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4 text-theme-primary">Kontakt</h3>
             <address className="not-italic text-theme-secondary">
               <p className="text-sm">{siteConfig.address.street}</p>
               <p className="text-sm">{siteConfig.address.postalCode} {siteConfig.address.city}</p>
@@ -53,7 +53,7 @@ const Footer = () => {
             {/* Social Media Links */}
             {Object.values(siteConfig.social).some(Boolean) && (
               <div className="mt-4">
-                <h4 className="text-sm font-semibold mb-2 text-theme-primary">Follow Us:</h4>
+                <h4 className="text-sm font-semibold mb-2 text-theme-primary">Śledź nas:</h4>
                 <div className="flex space-x-4 items-center">
                   {siteConfig.social.facebook && (
                     <Link href={siteConfig.social.facebook} aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="text-theme-muted hover:text-theme-accent">
@@ -91,7 +91,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-8 border-t border-theme pt-8 text-center">
-          <p className="text-sm text-theme-muted">&copy; {currentYear} {siteConfig.businessName}. All rights reserved.</p>
+          <p className="text-sm text-theme-muted">&copy; {currentYear} {siteConfig.businessName}. Wszelkie prawa zastrzeżone.</p>
         </div>
       </div>
     </footer>

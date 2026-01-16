@@ -7,35 +7,35 @@ interface FAQItem {
   answer: string;
 }
 
-// Generic FAQ items - customize for your client
+// FAQ items - Polish content
 const faqItems: FAQItem[] = [
   {
-    question: 'How much does your service cost?',
-    answer: 'Pricing depends on the scope of work and specific requirements. We offer free consultations and detailed quotes. Contact us to discuss your project and get an accurate estimate.',
+    question: 'Ile kosztuje wasza usługa?',
+    answer: 'Cena zależy od zakresu prac i specyficznych wymagań. Oferujemy bezpłatne konsultacje i szczegółowe wyceny. Skontaktuj się z nami, aby omówić projekt i uzyskać dokładną wycenę.',
   },
   {
-    question: 'How long does a typical project take?',
-    answer: 'Project timelines vary based on complexity. Small projects typically take 1-2 weeks, while larger projects may take 3-4 weeks. We provide a detailed timeline during the quote process.',
+    question: 'Jak długo trwa typowy projekt?',
+    answer: 'Czas realizacji zależy od złożoności projektu. Małe projekty trwają zazwyczaj 1-2 tygodnie, większe mogą zająć 3-4 tygodnie. Szczegółowy harmonogram przedstawiamy podczas wyceny.',
   },
   {
-    question: 'Do you offer design services?',
-    answer: 'Yes, we offer comprehensive design services. Our team will work with you to create a custom solution that meets your needs and preferences.',
+    question: 'Czy oferujecie usługi projektowe?',
+    answer: 'Tak, oferujemy kompleksowe usługi projektowe. Nasz zespół współpracuje z Tobą, aby stworzyć rozwiązanie dopasowane do Twoich potrzeb i preferencji.',
   },
   {
-    question: 'What areas do you serve?',
-    answer: 'We serve clients throughout the local area and surrounding regions. Contact us to confirm service availability in your location.',
+    question: 'W jakich lokalizacjach świadczycie usługi?',
+    answer: 'Obsługujemy klientów w całym regionie i okolicach. Skontaktuj się z nami, aby potwierdzić dostępność usług w Twojej lokalizacji.',
   },
   {
-    question: 'Do you provide free quotes?',
-    answer: 'Yes, we offer free, no-obligation quotes. Schedule a consultation and we\'ll provide a detailed estimate within 2-3 business days.',
+    question: 'Czy wycena jest bezpłatna?',
+    answer: 'Tak, oferujemy bezpłatne wyceny bez zobowiązań. Umów się na konsultację, a przedstawimy szczegółową wycenę w ciągu 2-3 dni roboczych.',
   },
   {
-    question: 'What is included in your service?',
-    answer: 'Our comprehensive service includes consultation, planning, execution, and follow-up support. We handle everything from start to finish to ensure your complete satisfaction.',
+    question: 'Co obejmuje wasza usługa?',
+    answer: 'Nasza kompleksowa usługa obejmuje konsultację, planowanie, realizację i wsparcie po zakończeniu projektu. Zajmujemy się wszystkim od początku do końca.',
   },
   {
-    question: 'How do I get started?',
-    answer: 'Getting started is easy! Contact us via phone, email, or the contact form on our website. We\'ll schedule a free consultation to discuss your needs and provide a quote.',
+    question: 'Jak mogę rozpocząć współpracę?',
+    answer: 'To proste! Skontaktuj się z nami telefonicznie, mailowo lub przez formularz na stronie. Umówimy bezpłatną konsultację, omówimy Twoje potrzeby i przedstawimy wycenę.',
   },
 ];
 
@@ -76,19 +76,19 @@ export default function FAQSection() {
             className="text-sm uppercase tracking-widest font-semibold"
             style={{ color: 'var(--color-accent)' }}
           >
-            Frequently Asked Questions
+            Najczęściej zadawane pytania
           </p>
           <h2 
             className="text-3xl sm:text-4xl font-bold mt-2"
             style={{ color: 'var(--color-text-primary)' }}
           >
-            Common Questions
+            FAQ
           </h2>
           <p 
             className="text-lg mt-4"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            Find answers to the most common questions from our clients
+            Znajdź odpowiedzi na najczęstsze pytania naszych klientów
           </p>
         </div>
 
@@ -151,13 +151,13 @@ export default function FAQSection() {
             className="mb-4"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            Have more questions? Get in touch!
+            Masz więcej pytań? Skontaktuj się z nami!
           </p>
           <a
-            href="/contact"
+            href="/#kontakt"
             className="inline-flex items-center px-6 py-3 font-semibold transition-colors btn-accent"
           >
-            Ask a Question
+            Zadaj pytanie
           </a>
         </div>
       </div>

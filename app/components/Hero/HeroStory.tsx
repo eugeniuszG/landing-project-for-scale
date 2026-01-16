@@ -15,9 +15,9 @@ interface HeroStoryProps {
 export default function HeroStory({
   title,
   story,
-  ctaText = "Learn More About Us",
-  ctaHref = "/about",
-  teamImage = "/assets/team.jpg",
+  ctaText = "Dowiedz się więcej",
+  ctaHref = "/#kontakt",
+  teamImage = "/assets/team.svg",
   steps = [],
 }: HeroStoryProps) {
   return (

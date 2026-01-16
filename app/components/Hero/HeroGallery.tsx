@@ -21,7 +21,7 @@ export default function HeroGallery({
   title,
   subtitle,
   projects = [],
-  ctaText = "View All Projects",
+  ctaText = "Zobacz wszystkie projekty",
   ctaHref = "/#portfolio",
 }: HeroGalleryProps) {
   return (

@@ -1,45 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
-  <defs>
-    <pattern id="squarePattern" width="40" height="40" patternUnits="userSpaceOnUse">
-      <rect width="20" height="20" x="0" y="0" fill="rgba(0,0,0,0.03)" 
-            transform="rotate(45 10 10)"/>
-    </pattern>
-  </defs>
-  
-  <rect width="1200" height="630" fill="url(#squarePattern)"/>
-  
-
-  <g transform="translate(600 315)" text-anchor="middle">
-    <text 
-      x="0" 
-      y="-100" 
-      font-family="Arial, sans-serif" 
-      font-size="72" 
-      font-weight="bold" 
-      text-anchor="middle"
-    >
-      Tambur House
-    </text>
-    
-    <text 
-      x="0" 
-      y="0" 
-      font-family="Arial, sans-serif" 
-      font-size="48" 
-      fill="#960019" 
-      text-anchor="middle"
-    >
-      Techdesign
-    </text>
-    
-    <text 
-      x="0" 
-      y="80" 
-      font-family="Arial, sans-serif" 
-      font-size="48" 
-      text-anchor="middle"
-    >
-      Remont i wyposażenie łazeinek
-    </text>
-  </g>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1f2937"/>
+  <rect x="50" y="50" width="1100" height="530" rx="16" fill="#374151"/>
+  <text x="50%" y="45%" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white" text-anchor="middle">Nazwa Firmy</text>
+  <text x="50%" y="60%" font-family="Arial, sans-serif" font-size="32" fill="#9ca3af" text-anchor="middle">Twój slogan tutaj</text>
 </svg>

@@ -6,44 +6,44 @@ import ThemeSwitcher from './components/ThemeSwitcher';
 import FAQSection from './components/FAQSection';
 import { siteConfig } from './lib/siteConfig';
 
-// Example content - replace with client-specific content
+// Treść strony - dostosuj dla klienta
 const heroContent = {
-  title: "Professional Services Tailored to Your Needs",
-  subtitle: "Quality work, on time, within budget. Get your free quote today.",
-  ctaText: "Get Free Quote",
-  ctaHref: "/contact",
-  heroImage: "/assets/hero-image.jpg",
-  backgroundImage: "/assets/hero-bg.jpg",
+  title: "Profesjonalne usługi dopasowane do Twoich potrzeb",
+  subtitle: "Jakość, terminowość, w budżecie. Uzyskaj bezpłatną wycenę już dziś.",
+  ctaText: "Bezpłatna wycena",
+  ctaHref: "/#kontakt",
+  heroImage: "/assets/hero-image.svg",
+  backgroundImage: "/assets/hero-bg.svg",
   bulletPoints: [
-    "Free consultation and quote",
-    "Experienced professionals",
-    "Quality guaranteed",
+    "Bezpłatna konsultacja i wycena",
+    "Doświadczeni specjaliści",
+    "Gwarancja jakości",
   ],
   badges: [
-    { icon: "✓", text: "Licensed & Insured" },
-    { icon: "⭐", text: "5-Star Reviews" },
-    { icon: "🏆", text: "10+ Years Experience" },
+    { icon: "✓", text: "Licencja i ubezpieczenie" },
+    { icon: "⭐", text: "Opinie 5 gwiazdek" },
+    { icon: "🏆", text: "10+ lat doświadczenia" },
   ],
   features: [
-    { value: "500+", label: "Projects Completed" },
-    { value: "98%", label: "Client Satisfaction" },
-    { value: "10+", label: "Years Experience" },
+    { value: "500+", label: "Zrealizowanych projektów" },
+    { value: "98%", label: "Zadowolonych klientów" },
+    { value: "10+", label: "Lat doświadczenia" },
   ],
-  story: "We're a team of dedicated professionals committed to delivering exceptional results. With over a decade of experience, we've helped hundreds of clients achieve their goals.",
+  story: "Jesteśmy zespołem oddanych profesjonalistów, którzy dostarczają wyjątkowe rezultaty. Z ponad dziesięcioletnim doświadczeniem pomogłiśmy setkom klientów osiągnąć ich cele.",
   steps: [
-    { number: "1", title: "Contact Us", description: "Reach out for a free consultation" },
-    { number: "2", title: "Get Quote", description: "Receive detailed estimate" },
-    { number: "3", title: "Plan", description: "We create your project plan" },
-    { number: "4", title: "Execute", description: "Professional implementation" },
-    { number: "5", title: "Deliver", description: "Quality results on time" },
+    { number: "1", title: "Kontakt", description: "Skontaktuj się po bezpłatną konsultację" },
+    { number: "2", title: "Wycena", description: "Otrzymaj szczegółową wycenę" },
+    { number: "3", title: "Planowanie", description: "Tworzymy plan projektu" },
+    { number: "4", title: "Realizacja", description: "Profesjonalne wykonanie" },
+    { number: "5", title: "Odbiór", description: "Jakościowe rezultaty na czas" },
   ],
   projects: [
-    { image: "/assets/project-1.jpg", title: "Project One", category: "Category" },
-    { image: "/assets/project-2.jpg", title: "Project Two", category: "Category" },
-    { image: "/assets/project-3.jpg", title: "Project Three", category: "Category" },
-    { image: "/assets/project-4.jpg", title: "Project Four", category: "Category" },
-    { image: "/assets/project-5.jpg", title: "Project Five", category: "Category" },
-    { image: "/assets/project-6.jpg", title: "Project Six", category: "Category" },
+    { image: "/assets/project-1.svg", title: "Projekt 1", category: "Kategoria" },
+    { image: "/assets/project-2.svg", title: "Projekt 2", category: "Kategoria" },
+    { image: "/assets/project-3.svg", title: "Projekt 3", category: "Kategoria" },
+    { image: "/assets/project-4.svg", title: "Projekt 4", category: "Kategoria" },
+    { image: "/assets/project-5.svg", title: "Projekt 5", category: "Kategoria" },
+    { image: "/assets/project-6.svg", title: "Projekt 6", category: "Kategoria" },
   ],
 };
 
@@ -69,10 +69,11 @@ export default function Home() {
       <FullWidthSection className="bg-theme-secondary">
         <div className="container mx-auto py-16 px-4">
           <h2 
+            id="uslugi"
             className="text-3xl md:text-4xl font-bold text-center mb-12"
             style={{ color: 'var(--color-text-primary)' }}
           >
-            Our Services
+            Nasze usługi
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Service Card 1 */}
@@ -89,19 +90,19 @@ export default function Home() {
                 className="text-lg font-semibold mb-4"
                 style={{ color: 'var(--color-text-primary)' }}
               >
-                3-Day Launch
+                Start w 3 dni
               </div>
               <p 
                 className="text-sm mb-6"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
-                One-page landing, quick turnaround
+                Jednostronicowy landing, szybka realizacja
               </p>
               <a 
-                href="/contact" 
+                href="/#kontakt" 
                 className="inline-block px-6 py-3 btn-accent"
               >
-                Get Started
+                Zamów
               </a>
             </div>
             
@@ -120,7 +121,7 @@ export default function Home() {
                   borderRadius: 'var(--radius-full)',
                 }}
               >
-                Popular
+                Popularny
               </div>
               <div 
                 className="text-4xl font-bold mb-2"
@@ -132,19 +133,19 @@ export default function Home() {
                 className="text-lg font-semibold mb-4"
                 style={{ color: 'var(--color-text-primary)' }}
               >
-                7-Day Launch
+                Start w 7 dni
               </div>
               <p 
                 className="text-sm mb-6"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
-                Landing + extra sections/pages
+                Landing + dodatkowe sekcje/strony
               </p>
               <a 
-                href="/contact" 
+                href="/#kontakt" 
                 className="inline-block px-6 py-3 btn-accent"
               >
-                Get Started
+                Zamów
               </a>
             </div>
             
@@ -162,19 +163,19 @@ export default function Home() {
                 className="text-lg font-semibold mb-4"
                 style={{ color: 'var(--color-text-primary)' }}
               >
-                11-Day Launch
+                Start w 11 dni
               </div>
               <p 
                 className="text-sm mb-6"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
-                Multi-page + stronger SEO setup
+                Wielostronicowa + mocniejsze SEO
               </p>
               <a 
-                href="/contact" 
+                href="/#kontakt" 
                 className="inline-block px-6 py-3 btn-accent"
               >
-                Get Started
+                Zamów
               </a>
             </div>
           </div>
@@ -186,25 +187,25 @@ export default function Home() {
       
       {/* Contact CTA */}
       <FullWidthSection className="bg-theme-accent">
-        <div className="container mx-auto py-16 px-4 text-center">
+        <div id="kontakt" className="container mx-auto py-16 px-4 text-center">
           <h2 
             className="text-3xl md:text-4xl font-bold mb-4"
             style={{ color: 'var(--color-text-primary)' }}
           >
-            Ready to Get Started?
+            Gotowy, aby zacząć?
           </h2>
           <p 
             className="text-lg mb-8 max-w-2xl mx-auto"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            Contact us today for a free consultation and quote. We&apos;ll help you achieve your goals.
+            Skontaktuj się z nami już dziś po bezpłatną konsultację i wycenę. Pomożemy Ci osiągnąć Twoje cele.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="/contact" 
+              href={`mailto:${siteConfig.email}`} 
               className="inline-block px-8 py-4 text-lg font-semibold btn-accent"
             >
-              Contact Us
+              Napisz do nas
             </a>
             <a 
               href={`tel:${siteConfig.phone}`}
@@ -215,7 +216,7 @@ export default function Home() {
                 borderRadius: 'var(--radius)',
               }}
             >
-              Call Now
+              Zadzwoń teraz
             </a>
           </div>
         </div>

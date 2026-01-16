@@ -15,8 +15,8 @@ interface HeroFormFocusedProps {
 export default function HeroFormFocused({
   title,
   subtitle,
-  formTitle = "Get Your Free Quote",
-  backgroundImage = "/assets/hero-bg.jpg",
+  formTitle = "Bezpłatna wycena",
+  backgroundImage = "/assets/hero-bg.svg",
   features = [],
 }: HeroFormFocusedProps) {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
@@ -28,7 +28,7 @@ export default function HeroFormFocused({
     // Form submission logic here
     await new Promise(resolve => setTimeout(resolve, 1000));
     setIsSubmitting(false);
-    alert('Thank you! We will contact you shortly.');
+    alert('Dziękujemy! Skontaktujemy się wkrótce.');
   };
 
   return (
@@ -128,7 +128,7 @@ export default function HeroFormFocused({
                     className="block text-sm font-medium mb-1"
                     style={{ color: 'var(--color-text-secondary)' }}
                   >
-                    Your Name
+                    Imię i nazwisko
                   </label>
                   <input
                     type="text"
@@ -152,7 +152,7 @@ export default function HeroFormFocused({
                     className="block text-sm font-medium mb-1"
                     style={{ color: 'var(--color-text-secondary)' }}
                   >
-                    Phone Number
+                    Numer telefonu
                   </label>
                   <input
                     type="tel"
@@ -176,7 +176,7 @@ export default function HeroFormFocused({
                     className="block text-sm font-medium mb-1"
                     style={{ color: 'var(--color-text-secondary)' }}
                   >
-                    Email Address
+                    Adres e-mail
                   </label>
                   <input
                     type="email"
@@ -205,7 +205,7 @@ export default function HeroFormFocused({
                     className="text-xs"
                     style={{ color: 'var(--color-text-muted)' }}
                   >
-                    I agree to receive contact regarding my inquiry
+                    Wyrażam zgodę na kontakt w sprawie mojego zapytania
                   </label>
                 </div>
                 
@@ -214,7 +214,7 @@ export default function HeroFormFocused({
                   disabled={isSubmitting}
                   className="w-full py-4 text-lg font-bold transition-all btn-accent disabled:opacity-50"
                 >
-                  {isSubmitting ? 'Sending...' : 'Get Free Quote'}
+                  {isSubmitting ? 'Wysyłanie...' : 'Bezpłatna wycena'}
                 </button>
               </form>
             </div>

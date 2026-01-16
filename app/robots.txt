@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-# Point to the sitemap
-Sitemap: https://remonty-lazienek-warszawa.pl/sitemap.xml
+# Point to the sitemap - update with your domain
+# Sitemap: https://yourdomain.com/sitemap.xml

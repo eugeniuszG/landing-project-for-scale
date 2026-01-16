@@ -17,11 +17,11 @@ interface HeroFullwidthProps {
 export default function HeroFullwidth({
   title,
   subtitle,
-  ctaPrimaryText = "Get a Quote",
-  ctaPrimaryHref = "/contact",
+  ctaPrimaryText = "Bezpłatna wycena",
+  ctaPrimaryHref = "/#kontakt",
   ctaSecondaryText,
   ctaSecondaryHref,
-  backgroundImage = "/assets/hero-bg.jpg",
+  backgroundImage = "/assets/hero-bg.svg",
   badges = [],
 }: HeroFullwidthProps) {
   return (

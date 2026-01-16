@@ -15,19 +15,7 @@ const nextConfig = {
     ],
   },
   async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.remonty-lazienek-warszawa.pl',
-          },
-        ],
-        destination: 'https://remonty-lazienek-warszawa.pl/:path*',
-        permanent: true,
-      },
-    ];
+    return [];
   },
 };
 

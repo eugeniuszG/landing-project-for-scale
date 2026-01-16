@@ -65,16 +65,16 @@ export interface SiteConfig {
 
 // Default placeholder config - replace for each client
 export const siteConfig: SiteConfig = {
-  businessName: "Your Business Name",
-  tagline: "Your compelling tagline here",
-  description: "Professional services tailored to your needs. Contact us for a free quote.",
+  businessName: "Nazwa Firmy",
+  tagline: "Twój przekonujący slogan",
+  description: "Profesjonalne usługi dostosowane do Twoich potrzeb. Skontaktuj się, aby uzyskać bezpłatną wycenę.",
   
   phone: "+48 000 000 000",
   email: "contact@yourdomain.com",
   address: {
-    street: "Street Address 123",
-    city: "City",
-    region: "Region",
+    street: "ul. Przykładowa 123",
+    city: "Warszawa",
+    region: "Mazowieckie",
     postalCode: "00-000",
     country: "PL",
   },
@@ -86,36 +86,35 @@ export const siteConfig: SiteConfig = {
   
   siteUrl: "https://yourdomain.com",
   locale: "pl_PL",
-  keywords: ["service", "professional", "quality"],
+  keywords: ["usługi", "profesjonalne", "jakość"],
   
   logo: {
-    src: "/assets/logo.png",
-    alt: "Your Business Logo",
+    src: "/assets/logo.svg",
+    alt: "Logo firmy",
     width: 40,
     height: 40,
   },
   
-  priceRange: "Contact for quote",
+  priceRange: "Skontaktuj się po wycenę",
   openingHours: {
-    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    days: ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek"],
     opens: "08:00",
     closes: "18:00",
   },
   
   navLinks: [
-    { href: "/", label: "Home" },
+    { href: "/", label: "Strona główna" },
     { href: "/#portfolio", label: "Portfolio" },
-    { href: "/about", label: "About" },
-    { href: "/pricing", label: "Pricing" },
-    { href: "/blog", label: "Blog" },
-    { href: "/contact", label: "Contact" },
+    { href: "/#uslugi", label: "Usługi" },
+    { href: "/#faq", label: "FAQ" },
+    { href: "/#kontakt", label: "Kontakt" },
   ],
   
   footerLinks: [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/pricing", label: "Pricing" },
-    { href: "/blog", label: "Blog" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "Strona główna" },
+    { href: "/#uslugi", label: "Usługi" },
+    { href: "/#portfolio", label: "Portfolio" },
+    { href: "/#faq", label: "FAQ" },
+    { href: "/#kontakt", label: "Kontakt" },
   ],
 };

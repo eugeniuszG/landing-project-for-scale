@@ -14,31 +14,31 @@ interface Testimonial {
   project: string;
 }
 
-// Generic testimonials - customize for your client
+// Opinie klientów
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Sarah M.",
-    location: "Downtown",
+    name: "Anna K.",
+    location: "Warszawa",
     rating: 5,
-    text: "Exceptional service from start to finish. The team was professional, communicative, and delivered exactly what we wanted. Highly recommend!",
-    project: "Full Service Project"
+    text: "Wyjątkowa obsługa od początku do końca. Zespół był profesjonalny, komunikatywny i dostarczył dokładnie to, czego chcieliśmy. Gorąco polecam!",
+    project: "Pełna realizacja"
   },
   {
     id: 2,
-    name: "John D.",
-    location: "Suburbs",
+    name: "Piotr M.",
+    location: "Kraków",
     rating: 5,
-    text: "Outstanding quality and attention to detail. They went above and beyond our expectations. Will definitely use their services again.",
-    project: "Premium Package"
+    text: "Doskonała jakość i dbałość o szczegóły. Przekroczyli nasze oczekiwania. Na pewno skorzystam z ich usług ponownie.",
+    project: "Pakiet Premium"
   },
   {
     id: 3,
-    name: "Emily R.",
-    location: "City Center",
+    name: "Katarzyna W.",
+    location: "Gdańsk",
     rating: 5,
-    text: "Great communication throughout the project. Fair pricing and excellent results. The team was a pleasure to work with.",
-    project: "Custom Solution"
+    text: "Świetna komunikacja przez cały projekt. Uczciwe ceny i doskonałe rezultaty. Współpraca z zespołem to czysta przyjemność.",
+    project: "Rozwiązanie na miarę"
   }
 ];
 
@@ -70,13 +70,13 @@ export default function Testimonials() {
           className="text-3xl md:text-4xl font-bold text-center mb-4"
           style={{ color: 'var(--color-text-primary)' }}
         >
-          What Our Clients Say
+          Co mówią nasi klienci
         </h2>
         <p 
           className="text-center mb-12"
           style={{ color: 'var(--color-text-secondary)' }}
         >
-          Reviews from satisfied customers
+          Opinie zadowolonych klientów
         </p>
 
         <div 
@@ -188,13 +188,13 @@ export default function Testimonials() {
             className="mb-4"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            Join our satisfied customers!
+            Dołącz do grona zadowolonych klientów!
           </p>
           <a
-            href="/contact"
+            href="/#kontakt"
             className="inline-block px-8 py-3 font-semibold shadow-sm transition-all duration-200 btn-accent"
           >
-            Contact Us
+            Skontaktuj się
           </a>
         </div>
       </div>

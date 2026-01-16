@@ -13,42 +13,42 @@ interface PortfolioItem {
   photos: { src: string; alt: string }[];
 }
 
-// Generic portfolio items - customize for your client
+// Portfolio - dostosuj dla klienta
 const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project Alpha',
-    location: 'Downtown',
+    title: 'Projekt Alfa',
+    location: 'Warszawa',
     category: 'Premium',
-    description: 'A comprehensive project showcasing our full range of capabilities with exceptional results.',
-    tags: ['premium', 'featured', 'complete'],
+    description: 'Kompleksowy projekt prezentujący pełen zakres naszych możliwości z wyjątkowymi rezultatami.',
+    tags: ['premium', 'wyróżniony', 'kompletny'],
     heroImage: '/assets/portfolio/project-1.jpg',
     photos: [
-      { src: '/assets/portfolio/project-1.jpg', alt: 'Project Alpha - Main view' },
-      { src: '/assets/portfolio/project-1-2.jpg', alt: 'Project Alpha - Detail' },
+      { src: '/assets/portfolio/project-1.jpg', alt: 'Projekt Alfa - Widok główny' },
+      { src: '/assets/portfolio/project-1-2.jpg', alt: 'Projekt Alfa - Szczegóły' },
     ],
   },
   {
-    title: 'Project Beta',
-    location: 'Suburbs',
+    title: 'Projekt Beta',
+    location: 'Kraków',
     category: 'Standard',
-    description: 'An efficient solution delivered on time and within budget with great attention to detail.',
-    tags: ['efficient', 'budget-friendly'],
+    description: 'Efektywne rozwiązanie dostarczone na czas i w budżecie z dbałością o szczegóły.',
+    tags: ['efektywny', 'ekonomiczny'],
     heroImage: '/assets/portfolio/project-2.jpg',
     photos: [
-      { src: '/assets/portfolio/project-2.jpg', alt: 'Project Beta - Main view' },
-      { src: '/assets/portfolio/project-2-2.jpg', alt: 'Project Beta - Detail' },
+      { src: '/assets/portfolio/project-2.jpg', alt: 'Projekt Beta - Widok główny' },
+      { src: '/assets/portfolio/project-2-2.jpg', alt: 'Projekt Beta - Szczegóły' },
     ],
   },
   {
-    title: 'Project Gamma',
-    location: 'City Center',
-    category: 'Custom',
-    description: 'A unique custom solution tailored to specific client requirements with innovative approach.',
-    tags: ['custom', 'innovative'],
+    title: 'Projekt Gamma',
+    location: 'Gdańsk',
+    category: 'Na miarę',
+    description: 'Unikalne rozwiązanie dopasowane do specyficznych wymagań klienta z innowacyjnym podejściem.',
+    tags: ['na miarę', 'innowacyjny'],
     heroImage: '/assets/portfolio/project-3.jpg',
     photos: [
-      { src: '/assets/portfolio/project-3.jpg', alt: 'Project Gamma - Main view' },
-      { src: '/assets/portfolio/project-3-2.jpg', alt: 'Project Gamma - Detail' },
+      { src: '/assets/portfolio/project-3.jpg', alt: 'Projekt Gamma - Widok główny' },
+      { src: '/assets/portfolio/project-3-2.jpg', alt: 'Projekt Gamma - Szczegóły' },
     ],
   },
 ];
@@ -56,7 +56,7 @@ const portfolioItems: PortfolioItem[] = [
 const portfolioSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Our Portfolio',
+  name: 'Nasze Portfolio',
   itemListElement: portfolioItems.map((item, index) => ({
     '@type': 'ListItem',
     position: index + 1,
@@ -109,7 +109,7 @@ export default function PortfolioSection() {
             className="text-sm uppercase tracking-widest font-semibold"
             style={{ color: 'var(--color-accent)' }}
           >
-            Our Work
+            Nasze realizacje
           </p>
           <h2 
             className="text-3xl sm:text-4xl font-bold"
@@ -121,7 +121,7 @@ export default function PortfolioSection() {
             className="text-lg max-w-2xl mx-auto"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            Browse our recent projects and see the quality of our work. Each project showcases our commitment to excellence.
+            Przeglądaj nasze ostatnie projekty i zobacz jakość naszej pracy. Każdy projekt pokazuje nasze zaangażowanie w doskonałość.
           </p>
         </div>
 
@@ -186,9 +186,9 @@ export default function PortfolioSection() {
                     type="button"
                     onClick={() => openLightbox(galleryPhotos.findIndex((p) => p.project === item.title))}
                     className="inline-flex justify-center items-center px-4 py-2 font-semibold transition btn-outline"
-                    aria-label={`View gallery for ${item.title}`}
+                    aria-label={`Zobacz galerię ${item.title}`}
                   >
-                    View Gallery
+                    Zobacz galerię
                   </button>
                 </div>
               </div>

@@ -15,9 +15,9 @@ interface HeroSplitProps {
 export default function HeroSplit({
   title,
   subtitle,
-  ctaText = "Get a Quote",
-  ctaHref = "/contact",
-  heroImage = "/assets/hero-image.jpg",
+  ctaText = "Bezpłatna wycena",
+  ctaHref = "/#kontakt",
+  heroImage = "/assets/hero-image.svg",
   bulletPoints = [],
 }: HeroSplitProps) {
   return (

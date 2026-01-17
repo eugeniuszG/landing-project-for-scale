@@ -6,7 +6,8 @@ import ThemeSwitcher from './components/ThemeSwitcher';
 import FAQSection from './components/FAQSection';
 import { ContactFormSwitcher } from './components/forms';
 import HostingOptions from './components/HostingOptions';
-import { siteConfig } from './lib/siteConfig';
+// siteConfig available for customization - import when needed
+// import { siteConfig } from './lib/siteConfig';
 
 // Treść strony - dostosuj dla klienta
 const heroContent = {

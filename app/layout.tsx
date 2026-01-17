@@ -143,8 +143,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://vercel.live" crossOrigin="anonymous" />
         
         {/* Google Fonts - for premium themes (Playfair Display, Lora, etc.) */}
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link 
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" 
           rel="stylesheet" 

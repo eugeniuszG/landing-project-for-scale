@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-# Point to the sitemap - update with your domain
-# Sitemap: https://yourdomain.com/sitemap.xml
+# Sitemap location (Next.js generates dynamically)
+Sitemap: /sitemap.xml

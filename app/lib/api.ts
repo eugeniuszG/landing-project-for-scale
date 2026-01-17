@@ -7,7 +7,14 @@ import { siteUrl } from "./sitemapConfig";
 const postsDirectory = join(process.cwd(), "_posts");
 
 export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
+  try {
+    if (!fs.existsSync(postsDirectory)) {
+      return [];
+    }
+    return fs.readdirSync(postsDirectory);
+  } catch {
+    return [];
+  }
 }
 
 export function getPostBySlug(slug: string) {

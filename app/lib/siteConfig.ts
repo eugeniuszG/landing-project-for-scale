@@ -25,6 +25,7 @@ export interface SiteConfig {
     facebook?: string;
     instagram?: string;
     telegram?: string;
+    whatsapp?: string;
     linkedin?: string;
     twitter?: string;
   };
@@ -83,6 +84,7 @@ export const siteConfig: SiteConfig = {
     facebook: "https://facebook.com/yourbusiness",
     instagram: "https://instagram.com/yourbusiness",
     telegram: "https://t.me/your_username",
+    whatsapp: "https://wa.me/48000000000",
   },
   
   siteUrl: "https://yourdomain.com",

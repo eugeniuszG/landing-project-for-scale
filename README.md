@@ -69,9 +69,25 @@ Zaktualizuj treść w tych plikach:
 ### 4. Zasoby graficzne
 
 Zamień placeholder w `/public/assets/`:
-- `logo.png` - logo firmy
+- `logo.svg` - logo firmy
 - `hero-image.svg` - obraz sekcji Hero
+- `og-image.png` - obraz Open Graph (1200x630px, PNG/JPG - nie SVG!)
 - `project-*.svg` - obrazy projektów
+
+### 5. Formularze kontaktowe
+
+Dostępne 4 warianty formularzy w `app/components/forms/`:
+- `ContactFormQuick` - szybki kontakt (imię, telefon)
+- `ContactFormQuote` - zapytanie o wycenę (z budżetem, terminem)
+- `ContactFormDetailed` - szczegółowe zapytanie (pełny brief)
+- `ContactFormFormspree` - dla hostingu statycznego
+
+### 6. Opcje hostingu
+
+Wbudowany komponent `HostingOptions` wyjaśnia klientom:
+- Hosting u Ciebie (pod klucz)
+- Hosting u klienta (Vercel, 0 zł/mies.)
+- Hosting klasyczny (statyczny HTML)
 
 ## System motywów
 

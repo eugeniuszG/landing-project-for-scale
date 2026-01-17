@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import ContactButtons from "./components/TelegramButton";
+import CookieBanner from "./components/CookieConsent";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from '@vercel/analytics/next';
 import { verificationMeta } from "./lib/verification";
@@ -140,6 +141,19 @@ export default function RootLayout({
         <link rel="preload" href={siteConfig.logo.src} as="image" />
         <link rel="dns-prefetch" href="https://vercel.live" />
         <link rel="preconnect" href="https://vercel.live" crossOrigin="anonymous" />
+        
+        {/* Google Fonts - for premium themes (Playfair Display, Lora, etc.) */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" 
+          rel="stylesheet" 
+        />
+        
+        {/* Favicon - PNG fallback for browsers that don't support SVG */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
       </head>
       <body>
         <script
@@ -160,6 +174,7 @@ export default function RootLayout({
             </main>
             <Footer />
             <ContactButtons />
+            <CookieBanner />
           </div>
         </ThemeProvider>
       </body>

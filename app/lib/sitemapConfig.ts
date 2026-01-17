@@ -4,8 +4,10 @@ import { siteConfig } from "./siteConfig";
 // Site URL from siteConfig
 export const siteUrl = siteConfig.siteUrl;
 
+type ChangeFrequency = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
+
 // Content type defaults for sitemap entries
-export const contentTypeDefaults: Record<string, { changeFrequency: string; priority: number }> = {
+export const contentTypeDefaults: Record<string, { changeFrequency: ChangeFrequency; priority: number }> = {
   page: {
     changeFrequency: "monthly",
     priority: 0.8,
